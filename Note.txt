@@ -1,0 +1,31 @@
+
+1. basic13.js 
+2. myLib.js  
+3. reverseStrArr.js  
+4. sll.js
+5. recursion.js
+
+
+
+1. basic13.js 
+
+2. myLib.js 
+    swap()
+    random()
+    floor()
+    randomStr()
+
+3. reverseStrArr.js 
+    split()
+    reverse()
+    join()
+    substr()
+    charAt()
+
+
+4. sll.js
+
+
+5. recursion.js
+
+
