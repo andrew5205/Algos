@@ -1,8 +1,9 @@
 // List //
 // swap() - swap two int, return as arr 
-// random()
-// floor()
+// random() - Math.random
+// floor() - Math.floor
 // randomStr() - 
+// indexOf() - Array.prototype
 
 
 
@@ -54,3 +55,13 @@ console.log(randomStr());
 
 
 
+// indexOf() - Array.prototype
+function testIndexOf(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        return arr.indexOf('c');
+    }
+    // console.log(i);
+}
+
+// testIndexOf(['a', 'b', 'c', 'd']);
+console.log(testIndexOf(['a', 'b', 'c', 'd']));
