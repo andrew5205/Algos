@@ -15,6 +15,9 @@
     floor()
     randomStr()
     indexOf()
+    toString() - 
+    convert to binary/ hex - using toString()
+
 
 3. mathLib.js
     Math.random()

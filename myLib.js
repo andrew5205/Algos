@@ -4,6 +4,8 @@
 // floor() - Math.floor
 // randomStr() - 
 // indexOf() - Array.prototype
+// toString() - 
+// convert to binary/ hex - using toString()
 
 
 
@@ -65,3 +67,25 @@ function testIndexOf(arr) {
 
 // testIndexOf(['a', 'b', 'c', 'd']);
 console.log(testIndexOf(['a', 'b', 'c', 'd']));
+
+
+
+// toString()
+function testToStr(num) {
+    var str = num.toString();
+    for (var i = 0; i < str.length; i++) {
+        console.log(i);
+        console.log(str[i]);
+    }
+}
+testToStr(12345);
+testToStr(['a', 'b', 'c']);
+
+// Convert to binary or hex 
+function toStrAD(num) {
+    var binary = num.toString(2);
+    var hex = num.toString(16);
+    console.log(binary);
+    console.log(hex);
+}
+toStrAD(255);
