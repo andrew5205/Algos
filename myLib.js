@@ -8,7 +8,7 @@
 // convert to binary/ hex - using toString()
 // insertAt() - 
 // removeAt() - 
-
+// swap() -
 
 
 // swap array 
@@ -109,3 +109,11 @@ function removeAt(arr, index) {
     console.log(arr);
 }
 removeAt(['1', '2', '3','4', '5'], 3);
+
+
+
+// swap()
+function swap(int1, int2) {
+    return [int2, int1];
+}
+console.log(swap(10, 20));
