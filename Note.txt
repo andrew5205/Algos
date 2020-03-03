@@ -1,10 +1,13 @@
 
 1. basic13.js 
-2. myLib.js  
-3. reverseStrArr.js  
-4. sll.js
-5. recursion.js
-
+2. myLib.js
+3. mathLib.js  
+4. reverseStrArr.js  
+5. sll.js
+6. recursion.js
+7. jsFundamentals.js 
+8. fund2.js
+9. array.js
 
 
 1. basic13.js 
@@ -19,6 +22,7 @@
     convert to binary/ hex - using toString()
     sertAt() - 
     removeAt() - 
+    swap() -
 
 
 3. mathLib.js
@@ -58,3 +62,6 @@
     slice() - Array.prototype
     insertAt() - 
     removeAt() - 
+    swap() - 
+    Remove Duplicate from sorted array 
+    Remove Duplicate from non sorted array 
