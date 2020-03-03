@@ -43,3 +43,9 @@
     Fizz Buzz 
     Braces Valid
 
+8. fund2.js
+    Fibonacci
+    Sum all digit to a number 
+    Sum To One Digit 
+    IS Prime
+
