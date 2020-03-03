@@ -16,7 +16,13 @@
     randomStr()
     indexOf()
 
-3. reverseStrArr.js 
+3. mathLib.js
+    Math.random()
+    Math.floor()
+    Math.ceil()
+    Math.trunc()
+
+4. reverseStrArr.js 
     split()
     reverse()
     join()
@@ -24,15 +30,13 @@
     charAt()
 
 
-4. sll.js
+5. sll.js
 
 
-5. recursion.js
+6. recursion.js
 
-
-6. jsFundamentals.js 
+7. jsFundamentals.js 
     Max, min, and Average
     Fizz Buzz 
     Braces Valid
-
 
