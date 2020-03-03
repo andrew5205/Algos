@@ -6,6 +6,8 @@
 // indexOf() - Array.prototype
 // toString() - 
 // convert to binary/ hex - using toString()
+// insertAt() - 
+// removeAt() - 
 
 
 
@@ -89,3 +91,21 @@ function toStrAD(num) {
     console.log(hex);
 }
 toStrAD(255);
+
+
+// insertAt()
+function insertAt(arr, val, index) {
+    arr.splice(index, 0, val);
+    console.log(arr);
+    // return arr;
+}
+insertAt(['1', '2', '3','4', '5'], 100, 3);     //return [ '1', '2', '3', 100, '4', '5' ]
+// console.log(insertAt(['1', '2', '3','4', '5'], 100, 3));  
+
+
+// removeAt()
+function removeAt(arr, index) {
+    arr.splice(index, 1);
+    console.log(arr);
+}
+removeAt(['1', '2', '3','4', '5'], 3);

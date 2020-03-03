@@ -17,6 +17,8 @@
     indexOf()
     toString() - 
     convert to binary/ hex - using toString()
+    sertAt() - 
+    removeAt() - 
 
 
 3. mathLib.js
@@ -49,3 +51,10 @@
     Sum To One Digit 
     IS Prime
 
+9. array.js
+    push() - Array.prototype
+    pop() - Array.prototype
+    splice() - Array.prototype
+    slice() - Array.prototype
+    insertAt() - 
+    removeAt() - 
