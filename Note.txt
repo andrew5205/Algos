@@ -66,5 +66,17 @@
     insertAt() - 
     removeAt() - 
     swap() - 
+    
     Remove Duplicate from sorted array 
     Remove Duplicate from non sorted array 
+
+10. string.js
+    str.length
+    str.split() - String.prototype 
+    arr.join() - Array.prototype 
+    str.charCodeAt() - String.prototype
+    str.toUpperCase() - String.prototype
+
+    Remove blanks
+    Get string digits 
+    Acronyms
