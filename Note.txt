@@ -23,6 +23,7 @@
     sertAt() - 
     removeAt() - 
     swap() -
+    charCodeAt() - String.prototype
 
 
 3. mathLib.js

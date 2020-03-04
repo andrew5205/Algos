@@ -9,6 +9,8 @@
 // insertAt() - 
 // removeAt() - 
 // swap() -
+// charCodeAt() - String.prototype
+
 
 
 // swap array 
@@ -111,9 +113,17 @@ function removeAt(arr, index) {
 removeAt(['1', '2', '3','4', '5'], 3);
 
 
-
 // swap()
 function swap(int1, int2) {
     return [int2, int1];
 }
 console.log(swap(10, 20));
+
+
+
+function testCharCodeAt(str) {
+    for ( var i = 0; i < str.length; i++) {
+        console.log(str.charCodeAt(i));
+    }
+}
+testCharCodeAt("1234");
