@@ -60,6 +60,8 @@
     pop() - Array.prototype
     splice() - Array.prototype
     slice() - Array.prototype
+    split() - String.prototype
+    join() - Array.prototype
     insertAt() - 
     removeAt() - 
     swap() - 

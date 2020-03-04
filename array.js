@@ -3,6 +3,8 @@
 // pop() - Array.prototype
 // splice() - Array.prototype
 // slice() - Array.prototype
+// split() - String.prototype
+// join() - Array.prototype
 // insertAt() - 
 // removeAt() - 
 // swap() - 
@@ -49,6 +51,28 @@ function testSlice(arr) {
 testSlice(['a','b','c','d','e','f']);   //shallow copy [ 'b', 'c' ]
 
 
+
+// split() - String.prototype 
+const str2 = "hello world";
+console.log(str2.split(""));   // [ 'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+console.log(str2.split(" "));   // [ 'hello', 'world' ]
+
+
+const wordArray = ["hi", "how", "are", "you"];
+console.log(wordArray[3].split(""));    // [ 'y', 'o', 'u' ]
+console.log(wordArray[3].split(" "));    // [ 'you' ]
+
+
+
+// join() - Array.prototype 
+const wordArray = ["hi", "how", "are", "you"];
+console.log(wordArray.join());  //hi,how,are,you    // "," is used by default 
+console.log(wordArray.join(''));  //hihowareyou
+console.log(wordArray.join("-"));  //hi-how-are-you
+console.log(wordArray.join(" "));  //hi how are you
+
+
+
 // insertAt()
 function insertAt(arr, val, index) {
     arr.splice(index, 0, val);
@@ -76,7 +100,7 @@ console.log(swap(10, 20));
 
 
 /* ****************************************************************************************** */
-//  Remove Duplicates
+// Remove Duplicates
 // Given a sorted array, remove duplicate values. 
 // Because array elements are already in order, all duplicate values will be grouped togethe
 
