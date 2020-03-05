@@ -226,11 +226,11 @@ console.log(reverseArray([1,2,3,4,5,6,7]));
 function isPalindrome(str) {
     var str = str.toLowerCase();
     // console.log(str);
-    for (var i = 0; i < str.length; i++) {
+    for (var i = 0; i < str.length/ 2; i++) {
         if (str[i] != str[str.length - 1 - i]) {
             return false;
         }
     }
     return true;
 }
-console.log(isPalindrome('DEFED!'));
+console.log(isPalindrome('DEFED'));
