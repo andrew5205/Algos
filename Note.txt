@@ -86,3 +86,4 @@
     Count Non-Spaces
     Remove Shorter Strings
     String: Reverse
+    Is Palindrome

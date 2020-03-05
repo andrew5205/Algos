@@ -15,6 +15,7 @@
 // Count Non-Spaces
 // Remove Shorter Strings
 // String: Reverse
+// Is Palindrome
 
 
 // Strings are immutable
@@ -218,4 +219,18 @@ console.log(reverseArray([1,2,3,4,5,6,7]));
 
 
 
-
+// Is Palindrome
+// Create a function that returns a boolean whether the string is a strict palindrome. 
+// For "a x a" or "racecar", return true. 
+// Do not ignore spaces, punctuation and capitalization: if given "Dud" or "oho!", return false.
+function isPalindrome(str) {
+    var str = str.toLowerCase();
+    // console.log(str);
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] != str[str.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPalindrome('DEFED!'));
