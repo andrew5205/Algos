@@ -89,3 +89,5 @@
     Remove Shorter Strings
     String: Reverse
     Is Palindrome
+    remove duplicate
+    print given sting, run-Length Encoding

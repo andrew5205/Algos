@@ -17,6 +17,8 @@
 // Remove Shorter Strings
 // String: Reverse
 // Is Palindrome
+// remove duplicate
+// print given sting, run-Length Encoding
 
 
 // Strings are immutable
@@ -265,7 +267,7 @@ console.log(isPalindrome('DEFED'));
 // ignore white space (spaces, tabs, returns), capitalization and punctuation.
 function isPalindromeIgnoreSpace(str) {
     var newStr = "";
-    var str = str.toLowerCase().replace(/[\W_]/g, "");
+    var str = str.toLowerCase().replace(/[\W_]/g, "");     // or replace(/[^A-Za-z0-9]/g, "")
     // \W metacharacter is used to find a non-word character
     console.log(str);
     for (var j = 0; j < str.length/2; j++) {
@@ -276,3 +278,37 @@ function isPalindromeIgnoreSpace(str) {
     return true;
 }
 console.log(isPalindromeIgnoreSpace('DE FE_D'));
+
+/* ************************************************************************************************************************ */
+
+
+// remove duplicate string character
+function delDup(str) {
+    var newStr = "";
+    var dict = {};
+    for ( var i = 0; i < str.length; i++) {
+        if (!dict[str[i]]) {
+            newStr += str[i];
+            dict[str[i]] = true;
+        }
+    }
+    return newStr;
+}
+console.log(delDup("abcdeed"));
+
+
+/* ************************************************************************************************************************ */
+// print given sting, return character and count // object
+
+function runLenEncoding(str) {
+    var dict = {};
+    for (var i = 0; i < str.length; i++) {
+        if (dict[str[i]]) {
+            dict[str[i]]++;
+        } else {
+            dict[str[i]] = 1;
+        }
+    }
+    return dict;
+};
+console.log(runLenEncoding("ABBCCCDDDD"));
