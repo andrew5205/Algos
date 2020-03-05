@@ -5,6 +5,7 @@
 // slice() - Array.prototype
 // split() - String.prototype
 // join() - Array.prototype
+// forEach() - Array.prototype
 // insertAt() - 
 // removeAt() - 
 // swap() - 
@@ -65,11 +66,28 @@ console.log(wordArray[3].split(" "));    // [ 'you' ]
 
 
 // join() - Array.prototype 
-const wordArray = ["hi", "how", "are", "you"];
-console.log(wordArray.join());  //hi,how,are,you    // "," is used by default 
-console.log(wordArray.join(''));  //hihowareyou
-console.log(wordArray.join("-"));  //hi-how-are-you
-console.log(wordArray.join(" "));  //hi how are you
+const wordArray2 = ["hi", "how", "are", "you"];
+console.log(wordArray2.join());  //hi,how,are,you    // "," is used by default 
+console.log(wordArray2.join(''));  //hihowareyou
+console.log(wordArray2.join("-"));  //hi-how-are-you
+console.log(wordArray2.join(" "));  //hi how are you
+
+
+
+// forEach() - Array.prototype
+function testForEach(arr) {
+    return arr.forEach( element => { console.log(element)});
+}
+console.log(testForEach(['cat', 'dog', 'fish']));   // cat 
+                                                    // dog 
+                                                    // fish
+
+// // regular for loop into array
+// const arr = ['cat', 'dog', 'fish'];
+// for (i = 0; i < arr.length; i++) { 
+// console.log(arr[i])
+// }
+
 
 
 

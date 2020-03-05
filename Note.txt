@@ -63,6 +63,7 @@
     slice() - Array.prototype
     split() - String.prototype
     join() - Array.prototype
+    forEach() - Array.prototype
     insertAt() - 
     removeAt() - 
     swap() - 
