@@ -7,6 +7,7 @@
 // str.search() - String.prototype
 // str.charCodeAt() - String.prototype
 // str.toUpperCase() - String.prototype
+// str.replace() - String.prototype
 
 // /* ********************************* */
 // Remove blanks
@@ -85,6 +86,30 @@ function testToUpperCase(str) {
 testToUpperCase("The quick brown fox jumps over the lazy dog");     //THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
 
 
+/* ************************************************************************************************************************ */
+// replace() - String.prototype 
+function testReplace(str) {
+    var newStr = str.replace("b", "X");
+    return newStr;
+}
+console.log(testReplace("abcabc"));    // aXcabc
+
+
+function testReplace2(str) {
+    var replaceString = /b/gi;      // replace whatever inside / /gi
+    var newStr = str.replace(replaceString, "Y");
+    return newStr;
+}
+console.log(testReplace2("abcabc"));    // aYcaYc
+
+// replace.(/[\W_]/g, "")  // replace non word char including _
+// replace.(/[\W_]/g, "")  // replace non word char
+function testReplaceSpecialChar(str) {
+    var newStr = str.replace(/[\W]/g, "");
+    return newStr;
+}
+console.log(testReplaceSpecialChar("@#^&*$Abc"));    // Abc
+/* ************************************************************************************************************************ */
 
 
 
@@ -234,3 +259,20 @@ function isPalindrome(str) {
     return true;
 }
 console.log(isPalindrome('DEFED'));
+
+
+
+// ignore white space (spaces, tabs, returns), capitalization and punctuation.
+function isPalindromeIgnoreSpace(str) {
+    var newStr = "";
+    var str = str.toLowerCase().replace(/[\W_]/g, "");
+    // \W metacharacter is used to find a non-word character
+    console.log(str);
+    for (var j = 0; j < str.length/2; j++) {
+        if (str[j] != str[str.length - 1 - j]) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPalindromeIgnoreSpace('DE FE_D'));
