@@ -66,17 +66,23 @@
     insertAt() - 
     removeAt() - 
     swap() - 
-    
+
     Remove Duplicate from sorted array 
     Remove Duplicate from non sorted array 
 
 10. string.js
     str.length
     str.split() - String.prototype 
-    arr.join() - Array.prototype 
+    arr.join() - Array.prototype
+    str.slice() - String.prototype
+    str.trim() - String.prototype
+    str.search() - String.prototype  
     str.charCodeAt() - String.prototype
     str.toUpperCase() - String.prototype
 
     Remove blanks
     Get string digits 
     Acronyms
+    Count Non-Spaces
+    Remove Shorter Strings
+    String: Reverse
