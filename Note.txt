@@ -80,6 +80,7 @@
     str.search() - String.prototype  
     str.charCodeAt() - String.prototype
     str.toUpperCase() - String.prototype
+    str.toLowerCase() - String.prototype
     str.replace() - String.prototype
 
     Remove blanks

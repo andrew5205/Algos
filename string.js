@@ -7,6 +7,7 @@
 // str.search() - String.prototype
 // str.charCodeAt() - String.prototype
 // str.toUpperCase() - String.prototype
+// str.toLowerCase() - String.prototype
 // str.replace() - String.prototype
 
 // /* ********************************* */
@@ -61,7 +62,7 @@ console.log(1+2+"3"+'4'+5);    // 3345
 
 // slice() String.prototype
 const string = "hello, how are you";
-console.log(string.slice(2,10));
+console.log(string.slice(2,10));    //llo, how
 
 
 
@@ -81,12 +82,22 @@ console.log(beSearchedString.search("you"));    // return index of staring char 
 function testToUpperCase(str) {
     for (var i = 0; i < str.length; i++) {
         str = str.toUpperCase();
-        console.log(str[i]);
+        // console.log(str[i]);
     }
     console.log(str)
 }
-testToUpperCase("The quick brown fox jumps over the lazy dog");     //THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+testToUpperCase("The quick brown fox jumps over the lazy dog !");     //THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG !
 
+
+
+// toLowerCase() - String.prototype 
+function testToLowerCase(str) {
+    for (var i = 0; i < str.length; i++) {
+        str = str.toLowerCase();
+    }
+    return str;
+}
+console.log(testToLowerCase("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG !"));    //the quick brown fox jumps over the lazy dog !
 
 /* ************************************************************************************************************************ */
 // replace() - String.prototype 
@@ -98,19 +109,19 @@ console.log(testReplace("abcabc"));    // aXcabc
 
 
 function testReplace2(str) {
-    var replaceString = /b/gi;      // replace whatever inside / /gi
+    var replaceString = /b/gi;      // replace all whatever inside / /gi
     var newStr = str.replace(replaceString, "Y");
     return newStr;
 }
 console.log(testReplace2("abcabc"));    // aYcaYc
 
-// replace.(/[\W_]/g, "")  // replace non word char including _
-// replace.(/[\W_]/g, "")  // replace non word char
+// replace.(/[\W_]/g, "")  // replace non word char and _
+// replace.(/[\W]/g, "")  // replace non word char
 function testReplaceSpecialChar(str) {
-    var newStr = str.replace(/[\W]/g, "");
+    var newStr = str.replace(/[\W_]/g, "");
     return newStr;
 }
-console.log(testReplaceSpecialChar("@#^&*$Abc"));    // Abc
+console.log(testReplaceSpecialChar("@#^&*$_Abc"));    // Abc
 /* ************************************************************************************************************************ */
 
 
@@ -144,7 +155,7 @@ function strDigits(str) {
     }
     return newStr;
 }
-console.log(strDigits("0s1a3y5w7h9a2t4?6!8?0"));
+console.log(strDigits("0s1a3y5w7h9a2t4?6!8?0"));    //01357924680
 
 /* ************************************************************************************************************************ */
 
@@ -184,7 +195,7 @@ function countNonSpace(str) {
     var count = 0;
     var arr = str.split("");
     for (var i = 0; i < str.length; i++) {
-        if (arr[i].charCodeAt() != 32) {
+        if (arr[i].charCodeAt() != 32) {        // ASCII #32 => space 
             count++;
         }
     }
@@ -266,10 +277,10 @@ console.log(isPalindrome('DEFED'));
 
 // ignore white space (spaces, tabs, returns), capitalization and punctuation.
 function isPalindromeIgnoreSpace(str) {
-    var newStr = "";
+    // var newStr = "";
     var str = str.toLowerCase().replace(/[\W_]/g, "");     // or replace(/[^A-Za-z0-9]/g, "")
     // \W metacharacter is used to find a non-word character
-    console.log(str);
+    // console.log(str);
     for (var j = 0; j < str.length/2; j++) {
         if (str[j] != str[str.length - 1 - j]) {
             return false;
@@ -294,7 +305,7 @@ function delDup(str) {
     }
     return newStr;
 }
-console.log(delDup("abcdeed"));
+console.log(delDup("abcdeed"));    // abcde
 
 
 /* ************************************************************************************************************************ */
@@ -311,4 +322,4 @@ function runLenEncoding(str) {
     }
     return dict;
 };
-console.log(runLenEncoding("ABBCCCDDDD"));
+console.log(runLenEncoding("ABBCCCDDDD"));    // { A: 1, B: 2, C: 3, D: 4 }
