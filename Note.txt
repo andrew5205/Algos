@@ -1,13 +1,15 @@
 
 1. basic13.js 
 2. myLib.js
-3. mathLib.js  
-4. reverseStrArr.js  
-5. sll.js
-6. recursion.js
-7. jsFundamentals.js 
-8. fund2.js
-9. array.js
+3. myBuildInFunc.js
+4. mathLib.js  
+5. reverseStrArr.js  
+6. sll.js
+7. recursion.js
+8. jsFundamentals.js 
+9. fund2.js
+10. array.js
+11. string.js 
 
 
 1. basic13.js 
@@ -25,14 +27,17 @@
     swap() -
     charCodeAt() - String.prototype
 
+3. myBuildInFunc.js 
+    myReverse()
 
-3. mathLib.js
+
+4. mathLib.js
     Math.random()
     Math.floor()
     Math.ceil()
     Math.trunc()
 
-4. reverseStrArr.js 
+5. reverseStrArr.js 
     split()
     reverse()
     join()
@@ -40,23 +45,23 @@
     charAt()
 
 
-5. sll.js
+6. sll.js
 
 
-6. recursion.js
+7. recursion.js
 
-7. jsFundamentals.js 
+8. jsFundamentals.js 
     Max, min, and Average
     Fizz Buzz 
     Braces Valid
 
-8. fund2.js
+9. fund2.js
     Fibonacci
     Sum all digit to a number 
     Sum To One Digit 
     IS Prime
 
-9. array.js
+10. array.js
     push() - Array.prototype
     pop() - Array.prototype
     splice() - Array.prototype
@@ -71,7 +76,7 @@
     Remove Duplicate from sorted array 
     Remove Duplicate from non sorted array 
 
-10. string.js
+11. string.js
     str.length
     str.split() - String.prototype 
     arr.join() - Array.prototype

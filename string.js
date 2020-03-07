@@ -345,4 +345,21 @@ console.log(lenEncoding("ABBCCCDDDD"));    //A1B2C3D4
 
 
 
+function lenEncoding2(str) {
+    var dict = {};
+    var newStr = "";
+    for (var i = 0; i < str.length; i++) {
+        if (!dict[str[i]]) {
+            dict[str[i]] = 1;
+        }
+        else {
+            dict[str[i]]++;
+        }
+    }
+    for ( key in dict ){
+        newStr += key + dict[key];
+    }
+    return newStr;
+};
+console.log(lenEncoding2("ABBCCCDDDD"));    //A1B2C3D4
 
