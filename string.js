@@ -323,3 +323,26 @@ function runLenEncoding(str) {
     return dict;
 };
 console.log(runLenEncoding("ABBCCCDDDD"));    // { A: 1, B: 2, C: 3, D: 4 }
+
+// better solution for output
+// for ( key in obj)
+function lenEncoding(str) {
+    var dict = {};
+    var newStr = "";
+    for (var i = 0; i < str.length; i++) {
+        if (dict[str[i]]) {
+            dict[str[i]]++;
+        } else {
+            dict[str[i]] = 1;
+        }
+    }
+    for ( key in dict ){
+        newStr += key + dict[key];
+    }
+    return newStr;
+};
+console.log(lenEncoding("ABBCCCDDDD"));    //A1B2C3D4
+
+
+
+
