@@ -104,3 +104,11 @@
 12. linkedLost.js 
     addToFront()
     addToEnd()
+    removeFromFront()
+    printList() -> process.stdout.write(data + " string ")
+    * maxToBack() 
+    * minToFront()
+    removeNode()
+    appendAt()
+    prependAt()
+    partition()
