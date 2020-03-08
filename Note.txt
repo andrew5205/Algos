@@ -9,7 +9,8 @@
 8. jsFundamentals.js 
 9. fund2.js
 10. array.js
-11. string.js 
+11. string.js
+12. linkedList.js 
 
 
 1. basic13.js 
@@ -97,3 +98,7 @@
     Is Palindrome
     remove duplicate
     print given sting, run-Length Encoding
+
+12. linkedLost.js 
+    addToFront()
+    addToEnd()
