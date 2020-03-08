@@ -30,6 +30,8 @@
 
 3. myBuildInFunc.js 
     myReverse()
+    myToLowerCase()
+    process.stdout.write() <- console.log()
 
 
 4. mathLib.js
