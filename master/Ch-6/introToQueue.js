@@ -67,10 +67,10 @@ SLQueue.prototype.contains = function(val) {
                 current = current.next;
             }
             else if ( current.value == val ) {
-                return "Found";
+                return true;
             }
         }
-        console.log("Out Of Range");
+        return false;
     }
 }
 
@@ -131,7 +131,6 @@ myQueue.printQueue();           // 2->3->4->5->6
 
 // console.log(myQueue.contains(5));       // Found
 // console.log(myQueue.contains(10));      // Out Of Range
-//                                         // undefined    // need to fix   
 
 
 // console.log(myQueue.isEmpty());
