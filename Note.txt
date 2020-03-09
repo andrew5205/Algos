@@ -10,7 +10,13 @@
 9. fund2.js
 10. array.js
 11. string.js
-12. linkedList.js 
+12. master folder 
+    Ch-5 :  linkedList.js 
+    Ch-6 :  queueAndStacks.js 
+            introToQueues.js
+                enqueue()
+                printQueue()
+
 
 
 1. basic13.js 
@@ -101,14 +107,24 @@
     remove duplicate
     print given sting, run-Length Encoding
 
-12. linkedLost.js 
-    addToFront()
-    addToEnd()
-    removeFromFront()
-    printList() -> process.stdout.write(data + " string ")
-    * maxToBack() 
-    * minToFront()
-    removeNode()
-    appendAt()
-    prependAt()
-    partition()
+
+
+master folder 
+
+CH-5 :  linkedList.js 
+            addToFront()
+            addToEnd()
+            removeFromFront()
+            printList() -> process.stdout.write(data + " string ")
+            * maxToBack() 
+            * minToFront()
+            removeNode()
+            appendAt()
+            prependAt()
+            partition()
+
+CH-6 :  queuesAndStacks.js 
+
+        introToQueues.js 
+            enqueue()
+            printQueue()
