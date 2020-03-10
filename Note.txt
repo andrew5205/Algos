@@ -133,3 +133,6 @@ CH-6 :  queuesAndStacks.js
             pushStack()
             popStack()
             printArr() - console.dir()
+
+CH-9 :  sigma.js
+        
