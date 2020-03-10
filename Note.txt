@@ -16,6 +16,9 @@
             introToQueues.js
                 enqueue()
                 printQueue()
+    CH-9 :  sigma.js
+            factorial.js
+            fibonacci.js
 
 
 
@@ -135,4 +138,5 @@ CH-6 :  queuesAndStacks.js
             printArr() - console.dir()
 
 CH-9 :  sigma.js
-        
+        factorial.js
+        fibonacci.js
