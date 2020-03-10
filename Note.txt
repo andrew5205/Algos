@@ -19,6 +19,7 @@
     CH-9 :  sigma.js
             factorial.js
             fibonacci.js
+            tribonacci.js
 
 
 
@@ -140,3 +141,4 @@ CH-6 :  queuesAndStacks.js
 CH-9 :  sigma.js
         factorial.js
         fibonacci.js
+        tribonacci.js
