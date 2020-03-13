@@ -90,6 +90,8 @@
     Remove Duplicate from sorted array 
     Remove Duplicate from non sorted array 
 
+    sort() - Array.prototype
+
 11. string.js
     str.length
     str.split() - String.prototype 
