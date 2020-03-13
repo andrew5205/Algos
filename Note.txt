@@ -22,6 +22,8 @@
             tribonacci.js
     CH-11 : binarySearchTree.js
 
+    CH-12 : bubbleSort.js
+
 
 
 1. basic13.js 
@@ -148,5 +150,5 @@ CH-9 :  sigma.js
 
 CH-11 : binarySearchTree.js
 
-
+CH-12 : bubbleSort.js
 
