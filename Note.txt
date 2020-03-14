@@ -10,7 +10,8 @@
 9. fund2.js
 10. array.js
 11. string.js
-12. master folder 
+12. Anagram.js
+13. master folder 
     Ch-5 :  linkedList.js 
     Ch-6 :  queueAndStacks.js 
             introToQueues.js
@@ -24,6 +25,8 @@
 
     CH-12 : bubbleSort.js
             selectionSort.js
+
+13. Anagram.js
 
 
 
@@ -116,6 +119,8 @@
     Is Palindrome
     remove duplicate
     print given sting, run-Length Encoding
+
+12. Anagram.js
 
 
 
