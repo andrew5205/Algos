@@ -93,6 +93,7 @@
     insertAt() - 
     removeAt() - 
     swap() - 
+    concat() - Array.prototype, String.prototype
 
     Remove Duplicate from sorted array 
     Remove Duplicate from non sorted array 
@@ -110,6 +111,7 @@
     str.toUpperCase() - String.prototype
     str.toLowerCase() - String.prototype
     str.replace() - String.prototype
+    concat() - Array.prototype, String.prototype
 
     Remove blanks
     Get string digits 

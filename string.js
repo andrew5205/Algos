@@ -9,6 +9,7 @@
 // str.toUpperCase() - String.prototype
 // str.toLowerCase() - String.prototype
 // str.replace() - String.prototype
+// str.concat() - String.prototype, Array.prototype 
 
 // /* ********************************* */
 // Remove blanks
@@ -122,6 +123,18 @@ function testReplaceSpecialChar(str) {
     return newStr;
 }
 console.log(testReplaceSpecialChar("@#^&*$_Abc"));    // Abc
+/* ************************************************************************************************************************ */
+
+
+// concat()
+// str.concat()
+console.log("It ".concat("is ", "a ", "nice ", 'day ', "!"))
+
+// Array.concat()
+arr1 = [1,2,3];
+arr2 = [4,5,6];
+console.log(arr1.concat(arr2));
+
 /* ************************************************************************************************************************ */
 
 

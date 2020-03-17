@@ -1,10 +1,11 @@
-// list 
+/// list 
 // push() - Array.prototype
 // pop() - Array.prototype
 // splice() - Array.prototype
 // slice() - Array.prototype
 // split() - String.prototype
 // join() - Array.prototype
+// concat() - Array.prototype, Str.prototype
 // forEach() - Array.prototype
 // insertAt() - 
 // removeAt() - 
@@ -37,13 +38,24 @@ function testArrayPop(arr) {
 testArrayPop([1,2,3]);  //return [ 1, 2 ]
 
 
-// splice()
+// splice(startIndex, delete_count, item) 
 function testSplice(arr) {
     arr.splice(2, 0, 'c');
     console.log(arr);
 }
 testSplice(['a', 'b', 'd', 'e']);  // return [ 'a', 'b', 'c', 'd', 'e' ]
 
+function testSplice2(arr) {
+    arr.splice(0, 2);               // start at 0, delete 2 elements
+    console.log(arr);
+}
+testSplice2(['a', 'b', 'd', 'e']);  //[ 'd', 'e' ]
+
+function testSplice3(arr) {
+    arr.splice(2);                  // delete 2 elements 
+    console.log(arr);
+}
+testSplice3(['a', 'b', 'd', 'e']);  //[ 'a', 'b' ]
 
 
 // slice() - returns a shallow copy of a portion of an array into a new array
@@ -73,6 +85,18 @@ console.log(wordArray2.join());  //hi,how,are,you    // "," is used by default
 console.log(wordArray2.join(''));  //hihowareyou
 console.log(wordArray2.join("-"));  //hi-how-are-you
 console.log(wordArray2.join(" "));  //hi how are you
+
+
+
+// concat()
+// str.concat()
+console.log("It ".concat("is ", "a ", "nice ", 'day ', "!"))
+
+// Array.concat()
+arr1 = [1,2,3];
+arr2 = [4,5,6];
+console.log(arr1.concat(arr2));
+
 
 
 
