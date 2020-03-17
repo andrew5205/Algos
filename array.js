@@ -1,4 +1,4 @@
-/// list 
+// list 
 // push() - Array.prototype
 // pop() - Array.prototype
 // splice() - Array.prototype
@@ -6,6 +6,7 @@
 // split() - String.prototype
 // join() - Array.prototype
 // concat() - Array.prototype, Str.prototype
+// filter() - Array.prototype
 // forEach() - Array.prototype
 // insertAt() - 
 // removeAt() - 
@@ -19,6 +20,8 @@
 // 
 // 
 // sort() - Array.prototype
+// filter() - Array.prototype
+
 
 
 
@@ -191,6 +194,18 @@ console.log(months);    // expected output: Array ["Dec", "Feb", "Jan", "March"]
 const array1 = [1, 30, 4, 21, 100000];
 array1.sort();
 console.log(array1);    // expected output: Array [1, 100000, 21, 30, 4]
+
+
+/********************************************************************************************/
+// filter() - Array.prototype - take callback function as arg 
+var arr = [20, 30, 40, 50, 60, 70, 80, 90];
+
+function largerThen50(arr) {
+    return arr > 50;
+}
+
+console.log(arr.filter(largerThen50));
+
 
 
 

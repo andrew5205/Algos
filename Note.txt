@@ -11,12 +11,19 @@
 10. array.js
 11. string.js
 12. Anagram.js
-13. master folder 
+13. master folder
+    Ch-4 :  zipArrayIntoMap.js
+            invertHash.js
+            forKeyInObj.js
+
     Ch-5 :  linkedList.js 
     Ch-6 :  queueAndStacks.js 
             introToQueues.js
                 enqueue()
                 printQueue()
+    CH-7 : balancePoint.js
+           balanceIndex.js
+
     CH-9 :  sigma.js
             factorial.js
             fibonacci.js
@@ -26,6 +33,7 @@
     CH-12 : bubbleSort.js
             selectionSort.js
             insertionSort.js
+            quickSort.js
 
 13. Anagram.js
 
@@ -99,6 +107,7 @@
     Remove Duplicate from non sorted array 
 
     sort() - Array.prototype
+    filter() - Array.prototype
 
 11. string.js
     str.length
@@ -128,6 +137,9 @@
 
 
 master folder 
+CH-4 :  zipArrayIntoMap.js
+        invertHash.js
+        forKeyInObj.js
 
 CH-5 :  linkedList.js 
             addToFront()
@@ -152,6 +164,9 @@ CH-6 :  queuesAndStacks.js
             popStack()
             printArr() - console.dir()
 
+CH-7 :  balancePoint.js
+        balanceIndex.js
+
 CH-9 :  sigma.js
         factorial.js
         fibonacci.js
@@ -162,4 +177,5 @@ CH-11 : binarySearchTree.js
 CH-12 : bubbleSort.js
         selectionSort.js
         insertionSort.js
+        quickSort.js
 
