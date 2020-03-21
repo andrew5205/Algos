@@ -23,6 +23,7 @@
                 printQueue()
     CH-7 : balancePoint.js
            balanceIndex.js
+           binarySearch.js
 
     CH-9 :  sigma.js
             factorial.js
@@ -30,7 +31,8 @@
             tribonacci.js
     CH-11 : binarySearchTree.js
 
-    CH-12 : bubbleSort.js
+    CH-12 : bigONotation.js
+            bubbleSort.js
             selectionSort.js
             insertionSort.js
             quickSort.js
@@ -108,6 +110,7 @@
 
     sort() - Array.prototype
     filter() - Array.prototype
+    includes() - Array.prototype, Str.prototype
 
 11. string.js
     str.length
@@ -120,7 +123,8 @@
     str.toUpperCase() - String.prototype
     str.toLowerCase() - String.prototype
     str.replace() - String.prototype
-    concat() - Array.prototype, String.prototype
+    str.concat() - Array.prototype, String.prototype
+    str.includes() - String.prototype, Array.prototype 
 
     Remove blanks
     Get string digits 
@@ -166,6 +170,7 @@ CH-6 :  queuesAndStacks.js
 
 CH-7 :  balancePoint.js
         balanceIndex.js
+        binarySearch.js
 
 CH-9 :  sigma.js
         factorial.js
@@ -174,7 +179,8 @@ CH-9 :  sigma.js
 
 CH-11 : binarySearchTree.js
 
-CH-12 : bubbleSort.js
+CH-12 : bigONotation.js
+        bubbleSort.js
         selectionSort.js
         insertionSort.js
         quickSort.js

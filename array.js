@@ -21,7 +21,7 @@
 // 
 // sort() - Array.prototype
 // filter() - Array.prototype
-
+// includes() - Array.prototype, Str.prototype
 
 
 
@@ -206,6 +206,13 @@ function largerThen50(arr) {
 
 console.log(arr.filter(largerThen50));
 
+/********************************************************************************************/
 
+// includes() - Str.prototype, Array.prototype 
 
+const arr11 = [1,2,3,4,5];
+console.log(arr11.includes(3));
 
+const arr21 = ["cat", "dog", "shark"];      // true 
+console.log(arr21.includes("shark"));       // true
+console.log(arr21.includes("do"));          // false 

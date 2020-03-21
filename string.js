@@ -10,6 +10,7 @@
 // str.toLowerCase() - String.prototype
 // str.replace() - String.prototype
 // str.concat() - String.prototype, Array.prototype 
+// str.includes() - String.prototype, Array.prototype 
 
 // /* ********************************* */
 // Remove blanks
@@ -128,12 +129,28 @@ console.log(testReplaceSpecialChar("@#^&*$_Abc"));    // Abc
 
 // concat()
 // str.concat()
-console.log("It ".concat("is ", "a ", "nice ", 'day ', "!"))
+console.log("It ".concat("is ", "a ", "nice ", 'day ', "!"))    // It is a nice day !
 
 // Array.concat()
 arr1 = [1,2,3];
 arr2 = [4,5,6];
-console.log(arr1.concat(arr2));
+console.log(arr1.concat(arr2));     // [ 1, 2, 3, 4, 5, 6 ]
+
+/* ************************************************************************************************************************ */
+
+// includes() 
+// str.includes()
+// The includes() method determines whether an array includes a certain value among its entries, 
+// returning true or false as appropriate.
+
+const str1 = "abcde";
+console.log(str1.includes("c"));            // true
+
+const str2 = "abc"
+const str3 = "ca";
+console.log((str2 + str2).includes(str3));  // true
+
+
 
 /* ************************************************************************************************************************ */
 
@@ -349,7 +366,7 @@ function lenEncoding(str) {
             dict[str[i]] = 1;
         }
     }
-    for ( key in dict ){
+    for ( key in dict ) {
         newStr += key + dict[key];
     }
     return newStr;
