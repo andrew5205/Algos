@@ -154,7 +154,7 @@ function swap(int1, int2) {
 console.log(swap(10, 20));
 
 
-
+console.log("**************************")
 /* ****************************************************************************************** */
 // Remove Duplicates
 // Given a sorted array, remove duplicate values. 
@@ -166,7 +166,7 @@ function removeDup(arr) {
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] != arr[i - 1]) {
             newArr.push(arr[i]);
-            console.log(newArr);
+            // console.log(newArr);
         }
     }
     return newArr;
@@ -189,9 +189,9 @@ function removeDupNotSorted(arr) {
 }
 console.log(removeDupNotSorted([1,2,3,3,4,5,3,6,7,2,7]));
 
+
+console.log("**************************")
 /********************************************************************************************/
-
-
 
 // sort() - Array.prototype
 // sort() method sorts the elements of an array in place and returns the sorted array.
@@ -220,8 +220,9 @@ console.log(arr.filter(largerThen50));
 // includes() - Str.prototype, Array.prototype 
 
 const arr11 = [1,2,3,4,5];
-console.log(arr11.includes(3));
+console.log(arr11.includes(3));             // true 
+console.log(arr11.includes("3"));             // false 
 
-const arr21 = ["cat", "dog", "shark"];      // true 
+const arr21 = ["cat", "dog", "shark"];
 console.log(arr21.includes("shark"));       // true
 console.log(arr21.includes("do"));          // false 
