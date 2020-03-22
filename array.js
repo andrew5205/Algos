@@ -8,6 +8,7 @@
 // concat() - Array.prototype, Str.prototype
 // filter() - Array.prototype
 // forEach() - Array.prototype
+// map() - Array.prototype
 // insertAt() - 
 // removeAt() - 
 // swap() - 
@@ -49,16 +50,16 @@ function testSplice(arr) {
 testSplice(['a', 'b', 'd', 'e']);  // return [ 'a', 'b', 'c', 'd', 'e' ]
 
 function testSplice2(arr) {
-    arr.splice(0, 2);               // start at 0, delete 2 elements
+    arr.splice(0, 2);               // start at 0, keep 2 elements
     console.log(arr);
 }
 testSplice2(['a', 'b', 'd', 'e']);  //[ 'd', 'e' ]
 
 function testSplice3(arr) {
-    arr.splice(2);                  // delete 2 elements 
+    arr.splice(3);                  // start at 0, keep 3 element 
     console.log(arr);
 }
-testSplice3(['a', 'b', 'd', 'e']);  //[ 'a', 'b' ]
+testSplice3(['a', 'b', 'd', 'e']);  //[ 'a', 'b', 'd' ]
 
 
 // slice() - returns a shallow copy of a portion of an array into a new array
@@ -98,7 +99,7 @@ console.log("It ".concat("is ", "a ", "nice ", 'day ', "!"))
 // Array.concat()
 arr1 = [1,2,3];
 arr2 = [4,5,6];
-console.log(arr1.concat(arr2));
+console.log(arr1.concat(arr2));     //[ 1, 2, 3, 4, 5, 6 ]
 
 
 
@@ -116,6 +117,14 @@ console.log(testForEach(['cat', 'dog', 'fish']));   // cat
 // for (i = 0; i < arr.length; i++) { 
 // console.log(arr[i])
 // }
+
+
+// map() - Array.prototype
+function testMap(arr) {
+    return arr.map( (e) => e * 2);
+}
+console.log(testMap([1,2,3,4,5]));      //[ 2, 4, 6, 8, 10 ]
+
 
 
 
