@@ -146,9 +146,9 @@ console.log(arr1.concat(arr2));     // [ 1, 2, 3, 4, 5, 6 ]
 const str1 = "abcde";
 console.log(str1.includes("c"));            // true
 
-const str2 = "abc"
-const str3 = "ca";
-console.log((str2 + str2).includes(str3));  // true
+const str22 = "abc"
+const str33 = "ca";
+console.log((str22 + str22).includes(str33));  // true
 
 
 
@@ -165,7 +165,7 @@ function removeBlank(str) {
     // console.log(str.split(" "));
     return string;
 }
-console.log(removeBlank(" Pl ayTha tF u nkyM usi c "));
+console.log(removeBlank(" Pl ayTha tF u nkyM usi c "));     //PlayThatFunkyMusic
 
 /* ************************************************************************************************************************ */
 
@@ -393,3 +393,19 @@ function lenEncoding2(str) {
 };
 console.log(lenEncoding2("ABBCCCDDDD"));    //A1B2C3D4
 
+
+function lenEncoding3(str) {
+    let count = 0;
+    newStr = ''
+    for ( let i = 0; i < str.length; i++) {
+        count++;
+        if ( str[i] != str[i+1]) {
+            newStr += str[i] + count;
+            count = 0;
+        }
+    }
+    return newStr;
+}
+
+console.log(lenEncoding3("AABBCDDDAAC"));       //A2B2C1D3A2C1
+console.log(lenEncoding3("AABBBCCCAAccc"));       //A2B3C3A2c3
