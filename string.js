@@ -11,6 +11,7 @@
 // str.replace() - String.prototype
 // str.concat() - String.prototype, Array.prototype 
 // str.includes() - String.prototype, Array.prototype 
+// str.substring() - String.prototype
 
 // /* ********************************* */
 // Remove blanks
@@ -149,6 +150,15 @@ console.log(str1.includes("c"));            // true
 const str22 = "abc"
 const str33 = "ca";
 console.log((str22 + str22).includes(str33));  // true
+
+
+// substring() - String.prototype,
+
+const stringO = "abcdefghijklmnop";
+console.log(stringO.substring(0, 3));   // abc
+console.log(stringO.substring(2, 3));   // c
+console.log(stringO.substring(3));      // defghijklmnop
+
 
 
 
