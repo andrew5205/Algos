@@ -11,7 +11,9 @@
 10. array.js
 11. string.js
 12. Anagram.js
-13. master folder
+13. number.js 
+
+14. master folder
     Ch-4 :  zipArrayIntoMap.js
             invertHash.js
             forKeyInObj.js
@@ -21,9 +23,9 @@
             introToQueues.js
                 enqueue()
                 printQueue()
-    CH-7 :  balancePoint.js
-            balanceIndex.js
-            binarySearch.js
+    CH-7 : balancePoint.js
+           balanceIndex.js
+           binarySearch.js
 
     CH-9 :  sigma.js
             factorial.js
@@ -32,6 +34,12 @@
 
     CH-10 : numToString.js
             stringEncode.js
+            stringDecode.js
+            stringDedupe.js
+            rotateString.js
+            uniqueLetter.js
+            stringToWordArray.js
+            longestWord.js
 
     CH-11 : binarySearchTree.js
 
@@ -41,7 +49,7 @@
             insertionSort.js
             quickSort.js
 
-13. Anagram.js
+15. Anagram.js
 
 
 
@@ -144,6 +152,13 @@
 
 12. Anagram.js
 
+13. number.js 
+
+
+
+
+
+
 
 
 master folder 
@@ -185,6 +200,12 @@ CH-9 :  sigma.js
 
 CH-10 : numToString.js
         stringEncode.js
+        stringDecode.js
+        stringDedupe.js
+        rotateString.js
+        uniqueLetter.js
+        stringToWordArray.js
+        longestWord.js
 
 CH-11 : binarySearchTree.js
 
