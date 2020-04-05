@@ -25,6 +25,14 @@
 // includes() - Array.prototype, Str.prototype
 
 
+// /* ************************************ */
+// shift array to left 
+// shift array to right
+// /* ************************************ */
+
+// /* ************************************ */
+// merge two sorted array 
+// /* ************************************ */
 
 // push()
 function testArrayPush(arr) {
@@ -39,6 +47,7 @@ function testArrayPop(arr) {
     arr.pop();
     console.log(arr);
 }
+console.log([1,2,3,4,5,6].pop());     // 6
 testArrayPop([1,2,3]);  //return [ 1, 2 ]
 
 
@@ -50,10 +59,10 @@ function testSplice(arr) {
 testSplice(['a', 'b', 'd', 'e']);  // return [ 'a', 'b', 'c', 'd', 'e' ]
 
 function testSplice2(arr) {
-    arr.splice(0, 2);               // start at 0, keep 2 elements
+    arr.splice(0, 2);               // start at 0, delete 2 elements
     console.log(arr);
 }
-testSplice2(['a', 'b', 'd', 'e']);  //[ 'd', 'e' ]
+testSplice2(['a', 'b', 'c', 'd', 'e']);  //[ 'c', 'd', 'e' ]
 
 function testSplice3(arr) {
     arr.splice(3);                  // start at 0, keep 3 element 
@@ -144,7 +153,7 @@ function removeAt(arr, index) {
     arr.splice(index, 1);
     console.log(arr);
 }
-removeAt(['1', '2', '3','4', '5'], 3);
+removeAt(['1', '2', '3','4', '5'], 3);      // [ '1', '2', '3', '5' ]
 
 
 // swap()
@@ -213,7 +222,8 @@ function largerThen50(arr) {
     return arr > 50;
 }
 
-console.log(arr.filter(largerThen50));
+console.log(arr.filter(largerThen50));      // [ 60, 70, 80, 90 ]
+console.log(arr.filter((e) => { return e > 50}));      // [ 60, 70, 80, 90 ]
 
 /********************************************************************************************/
 
@@ -226,3 +236,30 @@ console.log(arr11.includes("3"));             // false
 const arr21 = ["cat", "dog", "shark"];
 console.log(arr21.includes("shark"));       // true
 console.log(arr21.includes("do"));          // false 
+
+
+
+// ************************************************** // 
+// sfift array to left 
+function shiftToLeft(arr) {
+    for ( let i = 0; i < arr.length-1; i++) {
+        arr[i] = arr[i+1];
+    }
+    arr.pop();
+    // console.log(arr);
+    return arr;
+}
+// shiftToLeft([1,2,3,4,5]);                // [ 2, 3, 4, 5 ]
+console.log(shiftToLeft([1,2,3,4,5]));      // [ 2, 3, 4, 5 ]
+
+
+// ************************************************** // 
+// shift array to right 
+function shiftToRight(arr) {
+    for ( let j = arr.length -1; j >= 0; j--) {
+        arr[j+1] = arr[j];
+    }
+    return arr;
+}
+
+console.log(shiftToRight([9,8,7,6,5,4,3]));     // [9,9,8,7,6,5,4,3]
