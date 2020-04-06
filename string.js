@@ -160,6 +160,14 @@ console.log(stringO.substring(2, 3));   // c
 console.log(stringO.substring(3));      // defghijklmnop
 
 
+// substr() - String prototype method 
+// given index, return remaining cutoff string = sub string 
+function subString(str) {
+    for ( var i = 0; i < str.length; i++) {
+        console.log(str.substr(i));
+    }
+}
+subString('hello');
 
 
 /* ************************************************************************************************************************ */
@@ -177,9 +185,22 @@ function removeBlank(str) {
 }
 console.log(removeBlank(" Pl ayTha tF u nkyM usi c "));     //PlayThatFunkyMusic
 
+
+
+function removeB(str) {
+    let newStr = "";
+    for ( let i = 0; i < str.length; i++) {
+        if ( str[i] != " ") {
+            newStr += str[i];
+        }
+    }
+    return newStr;
+}
+console.log(removeB(" Pl ayTha tF u nkyM usi c "));         // PlayThatFunkyMusic
+
 /* ************************************************************************************************************************ */
 
-
+// https://www.w3schools.com/charsets/ref_html_ascii.asp
 
 // Get string digits 
 // Create a JavaScript function that given a string, returns the integer made from the string’s digits. 
@@ -197,6 +218,18 @@ function strDigits(str) {
 }
 console.log(strDigits("0s1a3y5w7h9a2t4?6!8?0"));    //01357924680
 
+
+function getAlp(str) {
+    let newStr = "";
+    for ( let i = 0; i < str.length; i++) {
+        if ( (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) || ( str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122 )) {
+            newStr += str[i];
+        }
+    }
+    return newStr;
+}
+console.log(getAlp("ABC@#$def 9025"));      // ABDdef
+
 /* ************************************************************************************************************************ */
 
 
@@ -207,22 +240,22 @@ console.log(strDigits("0s1a3y5w7h9a2t4?6!8?0"));    //01357924680
 // Given "Live from New York, it's Saturday Night!", return "LFNYISN".
 function acronyms(str){
     var newStr = "";
-    var arr = str.split(" ");       // slit string to array 
     str = str.toUpperCase();        // all string to uppercase first 
+    var arr = str.split(" ");       // slit string to array 
 
     if(!str.length){
         return null;
     }
-    for(var i = 0; i < arr.length; i++){
-        if( arr[i].charCodeAt(0) >= 65 && arr[i].charCodeAt(0) <= 90 || arr[i].charCodeAt(0) == 45) {
+    for(var i = 0; i < arr.length; i++) {
+        if( (arr[i].charCodeAt(0) >= 65 && arr[i].charCodeAt(0) <= 90) || arr[i].charCodeAt(0) == 45) {
             newStr += arr[i][0];
         }
     }
     return newStr;
 }
-console.log(acronyms("Live from New York, it's Saturday Night!"));
-console.log(acronyms(""));
-console.log(acronyms("there's no free lunch - gotta pay yer way."));
+console.log(acronyms("Live from New York, it's Saturday Night!"));      // LFNYISN
+console.log(acronyms(""));      // null 
+console.log(acronyms("there's no free lunch - gotta pay yer way."));    // TNFL-GPYW
 
 /* ************************************************************************************************************************ */
 
@@ -241,7 +274,7 @@ function countNonSpace(str) {
     }
     return count;
 }
-console.log(countNonSpace("Honey pie, you are driving me crazy"));
+console.log(countNonSpace("Honey pie, you are driving me crazy"));       // 29
 
 /* ************************************************************************************************************************ */
 
@@ -419,3 +452,12 @@ function lenEncoding3(str) {
 
 console.log(lenEncoding3("AABBCDDDAAC"));       //A2B2C1D3A2C1
 console.log(lenEncoding3("AABBBCCCAAccc"));       //A2B3C3A2c3
+
+
+
+
+
+
+
+
+
