@@ -136,7 +136,27 @@ function testMap(arr) {
 console.log(testMap([1,2,3,4,5]));      //[ 2, 4, 6, 8, 10 ]
 
 
+const matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+];
+const index = 1;
+  matrix.map(row => row[index])   // -> [2, 5, 8]
 
+
+//  rotate matrix by using map()  // 
+function rotate(matrix) {
+    let result = [];
+    for(let i = 0; i < matrix[0].length; i++) {
+        let row = matrix.map(e => e[i]).reverse();      // gather all i-th element of each column, and then reverse it 
+        result.push(row);
+    }
+    return result;
+};
+
+console.log(rotate([[1,2,3],[4,5,6],[7,8,9]]));     //[ [ 7, 4, 1 ], [ 8, 5, 2 ], [ 9, 6, 3 ] ]
+//  *********************************************************************************************************************** // 
 
 
 // insertAt()
