@@ -66,10 +66,15 @@ function testSplice2(arr) {
 testSplice2(['a', 'b', 'c', 'd', 'e']);  //[ 'c', 'd', 'e' ]
 
 function testSplice3(arr) {
-    arr.splice(3);                  // start at 0, keep 3 element 
-    console.log(arr);
+    let newArr = arr.splice(3);
+    console.log(newArr);        // [ 4, 5, 6, 7 ]
+    console.log(arr);           // [ 1, 2, 3 ]
 }
-testSplice3(['a', 'b', 'd', 'e']);  //[ 'a', 'b', 'd' ]
+testSplice3([1,2,3,4,5,6,7]);  
+
+
+console.log([1,2,3,4,5,6,7].splice(3));     // [ 4, 5, 6, 7 ]
+
 
 
 // slice() - returns a shallow copy of a portion of an array into a new array
