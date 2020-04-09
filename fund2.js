@@ -104,4 +104,47 @@ function isPrime(n) {
 console.log(isPrime(11));
 
 
-// /**********************************************************************/
+// ******************************************************* //
+function primeNaive(n) {
+    if ( n < 2) {
+        return false;
+    }
+    for ( let i = 2; i < n; i++) {
+        if ( n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(primeNaive(137));
+
+
+
+// **************  a better way!! sqrt ******************* //
+function primeSlightlyBetter(n) {
+    if ( n < 2) {
+        return false;
+    }
+    for ( let i = 2; i < Math.sqrt(n); i++) {
+        if ( n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(primeSlightlyBetter(137));
+
+
+
+
+
+
+/**********************************************************************/
+
+// Most Significant Digit
+
+// Given number of any size, return the most significant digit. 
+// If you already know what strings are, that’s great!
+
+
+
