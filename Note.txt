@@ -91,6 +91,7 @@
     Math.floor()
     Math.ceil()
     Math.trunc()
+    Math.pow()
 
 5. reverseStrArr.js 
     split()
