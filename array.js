@@ -97,6 +97,13 @@ console.log(wordArray[3].split(""));    // [ 'y', 'o', 'u' ]
 console.log(wordArray[3].split(" "));    // [ 'you' ]
 
 
+let strSplit = "he is dog with leash";
+console.log(strSplit.split('dog').join("cat"));
+// he is cat with leash
+
+let strsplit1 = "what ever this string will help to concat";
+console.log(strSplit1.split('this'));    // [ 'what ever ', ' string will help to concat' ]
+
 
 // join() - Array.prototype 
 const wordArray2 = ["hi", "how", "are", "you"];
