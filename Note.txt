@@ -12,8 +12,9 @@
 11. string.js
 12. Anagram.js
 13. number.js 
+14 object.js 
 
-14. master folder
+15. master folder
     CH-3 :  intermediateSum.js
             sumOfTwo.js
 
@@ -167,6 +168,7 @@
 
 13. number.js 
 
+14. object.js
 
 
 
