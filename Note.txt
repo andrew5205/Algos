@@ -71,6 +71,10 @@
         constructur.js
         highOrderArr.js
 
+18. asyncCrash
+        callbacks.js
+        promise.js
+
 
 1. basic13.js 
 
@@ -253,8 +257,11 @@ Es6 folder
         arrow.js
         playMap.js
 
-crash
+crash folder
         class.js
         constructur.js
         highOrderArr.js
 
+asyncCrash folder
+        callbacks.js
+        promise.js
