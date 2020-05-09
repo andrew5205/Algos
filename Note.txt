@@ -51,6 +51,7 @@
             isPalindrome.js
             isPermutation.js
             isPangram.js
+            longestIncreasingSequnce.js
 
     CH-11 : binarySearchTree.js
 
@@ -64,6 +65,11 @@
 16. Es6 folder 
         arrow.js 
         playMap.js
+
+17. crash
+        class.js
+        constructur.js
+        highOrderArr.js
 
 
 1. basic13.js 
@@ -231,6 +237,7 @@ CH-10 : numToString.js
         isPalindrome.js
         isPermutation.js
         isPangram.js
+        longestIncreasingSequnce.js
 
 CH-11 : binarySearchTree.js
 
@@ -243,5 +250,11 @@ CH-12 : bigONotation.js
 
 
 Es6 folder 
-arrow.js
-playMap.js
+        arrow.js
+        playMap.js
+
+crash
+        class.js
+        constructur.js
+        highOrderArr.js
+
