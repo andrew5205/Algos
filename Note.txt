@@ -75,6 +75,10 @@
         callbacks.js
         promise.js
 
+19. hightOrderFunction folder
+        main.js
+        index.html
+
 
 1. basic13.js 
 
@@ -265,3 +269,7 @@ crash folder
 asyncCrash folder
         callbacks.js
         promise.js
+
+hightOrderFunction folder
+        main.js
+        index.html
