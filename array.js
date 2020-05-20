@@ -24,6 +24,7 @@
 // sort() - Array.prototype
 // filter() - Array.prototype
 // includes() - Array.prototype, Str.prototype
+// some() - Array.prototype
 
 
 // /* ************************************ */
@@ -66,7 +67,7 @@ function testSplice2(arr) {
 testSplice2(['a', 'b', 'c', 'd', 'e']);  //[ 'c', 'd', 'e' ]
 
 function testSplice3(arr) {
-    let newArr = arr.splice(3);
+    let newArr = arr.splice(3);     // default start at 0, delete 3 element
     console.log(newArr);        // [ 4, 5, 6, 7 ]
     console.log(arr);           // [ 1, 2, 3 ]
 }
@@ -102,7 +103,7 @@ console.log(strSplit.split('dog').join("cat"));
 // he is cat with leash
 
 let strsplit1 = "what ever this string will help to concat";
-console.log(strSplit1.split('this'));    // [ 'what ever ', ' string will help to concat' ]
+console.log(strsplit1.split('this'));    // [ 'what ever ', ' string will help to concat' ]
 
 
 // join() - Array.prototype 
@@ -278,6 +279,22 @@ console.log(arr11.includes("3"));             // false
 const arr21 = ["cat", "dog", "shark"];
 console.log(arr21.includes("shark"));       // true
 console.log(arr21.includes("do"));          // false 
+
+console.log("**************** some() *********************");
+// ************************************************** // 
+// some() - Array.prototype
+// The some() method tests whether at least one element in the array passes the test implemented by the provided function. 
+// It returns a Boolean value.
+a = [ 1, 2, 3, 4, 5, 6];
+b = [10, 3, 20, 30];
+c = [100, 200, 300]
+
+function includeTest(arr1, arr2) {
+    return arr1.some( e => arr2.includes(e));       // least one element in the array pass the callback function
+    // return arr1.includes(arr2);                  // arr2 needs to be exactlly the same in arr1 
+}
+console.log(includeTest(a, b));     // true 
+console.log(includeTest(a, c));     // false
 
 
 

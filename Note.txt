@@ -152,6 +152,7 @@
     sort() - Array.prototype
     filter() - Array.prototype
     includes() - Array.prototype, Str.prototype
+    some() - Array.prototype
 
 11. string.js
     str.length
