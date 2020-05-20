@@ -9,6 +9,8 @@
 // Primitives will be wrapped to objects
 // Exceptions interrupt
 
+// set() - Set objects are collections of values
+
 
 // *************     Object.assign()  *******************************// 
 // The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. 
@@ -149,7 +151,7 @@ const targetE = Object.defineProperty({}, 'foo', {
         writable: false
     }); // target.foo is a read-only property
 
-    Object.assign(targetE, { bar: 2 }, { foo2: 3, foo: 3, foo3: 3 }, { baz: 4 });
+    // Object.assign(targetE, { bar: 2 }, { foo2: 3, foo: 3, foo3: 3 }, { baz: 4 });
     // TypeError: "foo" is read-only
     // The Exception is thrown when assigning target.foo
 
@@ -158,4 +160,47 @@ const targetE = Object.defineProperty({}, 'foo', {
     console.log(target.foo);  // 1, exception is thrown here.
     console.log(target.foo3); // undefined, assign method has finished, foo3 will not be copied.
     console.log(target.baz);  // undefined, the third source will not be copied either.
+
+
+
+// ************** make Deep Clone function  ******************************** //
+function makeDeepClone(obj) {
+    const clone = {};
+    for(const key in obj) {
+        const originalVal = obj[key];
+        
+        if(typeof originalVal === 'object') {
+            clone[key] = makeDeepClone(originalVal);
+        } else {
+        clone[key] = originalVal;
+        }
+    }
+
+    return clone;
+}
+
+
+
+console.log('**********************  set()  ***************************')
+// *****************   set()   ******************************************** //
+// set() - Set objects are collections of values
+// You can iterate through the elements of a set in insertion order. 
+// A value in the Set may only occur once; it is unique in the Set's collection
+
+// create a mySet, which is new Set object
+const mySet = new Set([]);
+
+mySet.add(1);
+mySet.add(2);
+mySet.add(3);
+mySet.add('some text');
+mySet.delete(3);
+console.log(mySet);
+
+console.log(mySet.has(1));                              // true
+console.log(mySet.has('Some Text'.toLowerCase()));      // true
+
+console.log(mySet.size);        // 3
+
+
 
