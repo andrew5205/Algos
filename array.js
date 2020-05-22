@@ -322,3 +322,61 @@ function shiftToRight(arr) {
 }
 
 console.log(shiftToRight([9,8,7,6,5,4,3]));     // [9,9,8,7,6,5,4,3]
+
+
+
+// *******************  merge two sorted array  ************************************** //
+function mergeTwoArr(arr1, arr2) {
+
+    const output = [];
+    // validation input arr 
+    if (arr1.length === 0) {
+        return arr2; 
+    }
+
+    if ( arr2.length === 0) {
+        return arr1;
+    }
+
+    // check elements 
+    let current = 0;
+    let i = j = 0;
+    while( arr1[i] || arr2[j]) {
+        console.log(arr1[i], arr2[j]);
+
+        // if arr2 is undefined, !arr2.length == !undefind == true
+        // put arr1[i] to output array
+        if ( !arr2.length || (arr1[i] < arr2[j])) {
+            output[current] = arr1[i];
+            i++;
+        } else {
+            output[current] = arr2[j];
+            j++;
+        }
+        current++;
+    }
+
+    return output;
+}
+
+// if array empty out first
+console.log('answer', undefined < 8);       // false
+// cause it jump into else statement 
+// allowed to push the rest from arr2 
+
+console.log(mergeTwoArr([1,3,5,7], [2,4,6,8,9]));
+
+// answer false
+// 1 2
+// 3 2
+// 3 4
+// 5 4
+// 5 6
+// 7 6
+// 7 8
+// undefined 8
+// undefined 9
+// [
+//   1, 2, 3, 4, 5,
+//   6, 7, 8, 9
+// ]
