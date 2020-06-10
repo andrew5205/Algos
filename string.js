@@ -12,6 +12,7 @@
 // str.concat() - String.prototype, Array.prototype 
 // str.includes() - String.prototype, Array.prototype 
 // str.substring() - String.prototype
+// Str.substr() - String.prototype
 
 // /* ********************************* */
 // Remove blanks
@@ -152,6 +153,12 @@ const str33 = "ca";
 console.log((str22 + str22).includes(str33));  // true
 
 
+
+/* ************************************************************************************************************************ */
+// Quick memory 
+// substring() has i in the text -> two arg all for index ( not included)
+// substr() first i is index, sec -> length
+
 // substring() - String.prototype,
 
 const stringO = "abcdefghijklmnop";
@@ -161,6 +168,11 @@ console.log(stringO.substring(3));      // defghijklmnop
 
 
 // substr() - String prototype method 
+
+const strForSubStr = "abcdefghijklmnop";
+console.log(strForSubStr.substr(0,5));     // abcde
+console.log(strForSubStr.substr(3));        // defghijklmnop
+
 // given index, return remaining cutoff string = sub string 
 function subString(str) {
     for ( var i = 0; i < str.length; i++) {

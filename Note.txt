@@ -168,6 +168,7 @@
     str.concat() - Array.prototype, String.prototype
     str.includes() - String.prototype, Array.prototype
     str.substring() - String.prototype 
+    str.substr - String.prototype 
 
     Remove blanks
     Get string digits 
