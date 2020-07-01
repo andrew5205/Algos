@@ -125,7 +125,8 @@ function primeSlightlyBetter(n) {
     if ( n < 2) {
         return false;
     }
-    for ( let i = 2; i < Math.sqrt(n); i++) {
+    // be aware of boundary 
+    for ( let i = 2; i*i <= n; i++) {
         if ( n % i == 0) {
             return false;
         }
@@ -133,6 +134,9 @@ function primeSlightlyBetter(n) {
     return true;
 }
 console.log(primeSlightlyBetter(137));
+console.log(primeSlightlyBetter(2));
+console.log(primeSlightlyBetter(3));
+console.log(primeSlightlyBetter(4));
 
 
 
